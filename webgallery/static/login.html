@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Gallery</title>
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <link href="style/form.css" rel="stylesheet" type="text/css" />
+    <link href="style/image_gallery.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="./js/login.mjs"></script>
+</head>
+<body>
+    <div class="header">
+        <header>
+            <a href="index.html" id="title">Web Gallery</a>
+        </header>
+    </div>
+
+    <p id="error" class="hidden"> </p>
+
+    <section id="login-section">
+        <form id="login-form" class="form" enctype="multipart/form-data">
+            <input type="text" class="form-element" placeholder="username" name="username" required />
+            <input type="password" class="form-element" placeholder="password" name="password" required />    
+            <div id="sign-buttons">
+                <button id="signin" name="action" class="sign btn">Sign in</button>
+                <button id="signup" name="action" class="sign btn">Sign up</button>
+            </div>
+        </form>
+    </section>
+
+    <footer><a href="credits.html">credits</a></footer>
+</body>
+</html>

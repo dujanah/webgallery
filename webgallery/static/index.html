@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Gallery</title>
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <link href="style/form.css" rel="stylesheet" type="text/css" />
+    <link href="style/image_gallery.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="./js/index.mjs"></script>
+</head>
+<body>
+    <div class="header">
+        <header>
+            <a href="index.html" id="title">Web Gallery</a>
+        </header>
+        <a href="login.html" id="login-link" class="sign-in-out">Sign up / Sign in</a>
+        <a href="/signout/" id="logout-link" class="sign-in-out">Sign out</a>
+    </div>
+    
+    <p id="error"> </p>
+
+    <section id="image-upload-section">
+        <h2>Upload Image</h2>
+        <button id="toggle-image-form-btn">Show/Hide</button>
+        <form id="add-image-form" class="form" action='/api/images/' method="POST" enctype="multipart/form-data">
+            <input type="text" class="form-element" id="image-title-content" placeholder="Image Title" name="image-title" required />
+            <input type="text" class="form-element" id="image-author-content" placeholder="Author Name" name="author-name" required />
+            <input type="file" class="form-element" id="image-file-content" name="image-file" required />
+            <button type="submit" id="upload-image" class="button form-element">Upload Image</button>
+        </form>
+    </section>
+
+    <section id="image-galleries">
+        <div class="image-gallery">
+            <h2>Image Gallery</h2>
+            <div class="display-image"></div>
+            <div class="image-info">
+                <h3 class="image-title">Image Title</h3>
+                <p class="image-author">Author</p>
+            </div>
+            <div class="image-controls">
+                <i class="arrow left previous-picture"></i>
+                <img class="delete delete-image" alt="delete" src="media/delete.png">
+                <i class="arrow right next-picture"></i>
+            </div>
+            <form class="comment-form">
+                <input
+                    type="text"
+                    id="post-comment-1"
+                    class="comment-input"
+                    placeholder="Share your thoughts..."
+                    name="comment-1"
+                    required
+                >
+              <button type="submit" class="share btn">Share</button>
+            </form>
+            <div class="comments">
+                <div class="div-comment">
+                    <div class="user-info">
+                        <p class="username">dujanahz</p>
+                        <p class="date">2016/07/08</p>
+                    </div>
+                    <p class="comment"> What a great day!</p>
+                    <img class="delete" src="media/delete.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer><a href="credits.html">credits</a></footer>
+</body>
+</html>

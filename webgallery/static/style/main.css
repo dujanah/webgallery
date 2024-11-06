@@ -1,0 +1,63 @@
+@import "styles.css";
+
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    max-width: 60%;
+    min-width: 60%;
+    margin: auto;
+    background-color: var(--white);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header {
+    margin: 30px auto;
+    font-size: 70px;
+    font-weight: 450;
+    background: -webkit-linear-gradient(var(--secondary-color-two), var(--secondary-color-two-dark));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+.sign-in-out {
+    text-decoration: none;
+    color: var(--secondary-color-two);
+    border: var(--secondary-color-two) solid 2.5px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.sign-in-out:hover {
+    color: white;
+    background-color: var(--secondary-color-two);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+section {
+    margin: 70px auto;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 38px;
+    color: var(--secondary-color-one);
+    margin-top: 40px;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin: 25px auto;
+}

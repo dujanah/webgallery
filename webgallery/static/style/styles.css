@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --primary-color-one: #141619;
+    --primary-color-two: #2c2e3a;
+    --secondary-color-one: #050a44;
+    --secondary-color-two: #0a21c0;
+    --secondary-color-two-dark: #030933;
+    --accent-color: #b3b4bd;
+    --white: #f9f9fd;
+}

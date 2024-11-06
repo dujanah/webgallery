@@ -1,0 +1,79 @@
+@import "styles.css";
+
+.display-image {
+    height: 30vw;
+    width: 60vw;
+    background-color: var(--accent-color);
+    border: black solid 4px;
+    border-radius: 30px;
+    background-position: center;
+    background-size: cover;
+}
+
+.image-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-controls {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.arrow {
+    border: solid var(--primary-color-two);
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 5px 9px;
+}
+
+.arrow:hover, #delete:hover {
+    cursor: pointer;
+}
+
+.arrow.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.arrow.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.delete {
+    height: 25px;
+}
+
+.delete:hover {
+    cursor: pointer;
+}
+
+.comments {
+    margin: 50px auto;
+}
+
+.div-comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 20px auto;
+}
+
+.comment {
+    flex: 1;
+    font-size: 16px;
+}
+
+.username {
+    font-size: 18px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+.comment-date {
+    font-size: 13px;
+    margin: 0px;
+}

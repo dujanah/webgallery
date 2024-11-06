@@ -1,0 +1,112 @@
+@import "styles.css";
+
+#toggle-image-form-btn, #upload-image {
+    transition: 0.2s background-color;
+}
+
+#toggle-image-form-btn {
+    font-size: 20px;
+    font-family: "DM Sans", sans-serif;
+    background-color: transparent;
+    color: var(--secondary-color-two-dark);
+    border: var(--secondary-color-two-dark) solid 2.5px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#toggle-image-form-btn:hover {
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--secondary-color-two-dark);
+}
+
+.form {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px 30px;
+    border-radius: 50px;
+}
+
+#add-image-form {
+    background-color: var(--secondary-color-two);
+}
+
+.form-element {
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    padding: 18px;
+    font-size: 22px;
+    background-color: var(--secondary-color-two-dark);
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+.form-element::placeholder {
+    color: var(--white);
+}
+
+#upload-image {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#upload-image:hover {
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--secondary-color-two-dark);
+    border-color: var(--secondary-color-two-dark);
+}
+
+.comment-form {
+    display: flex;
+    background-color: transparent;
+    font-size: 14px;
+    color: var(--primary-color-two);
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.comment-input {
+    margin: 20px;
+    flex: 1;
+    width: 60vw;
+    padding: 12px;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 40px;
+}
+
+.comment-input::placeholder {
+    color: var(--accent-color);
+}
+
+.share.btn {
+    font-size: 14px;
+    padding: 12px;
+    width: 80px;
+}
+
+.sign.btn, .share.btn {
+    font-family: "DM Sans", sans-serif;
+    margin-right: 20px;
+    color: var(--secondary-color-two-dark);
+    border: solid 2px var(--secondary-color-two-dark);
+    border-radius: 40px;
+    background-color: white;
+}
+
+.sign.btn {
+    padding: 14px;
+    font-size: 17px;
+    width: 120px;
+}
+
+.sign.btn:hover, .share.btn:hover {
+    background-color: var(--secondary-color-two-dark);
+    color: white;
+    cursor: pointer;
+}
